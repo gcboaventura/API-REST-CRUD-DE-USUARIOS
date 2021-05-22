@@ -1,0 +1,27 @@
+{
+  "name": "API REST CRUD DE USUARIOS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js",
+    "production": "pm2 start index.js"
+  },
+  "keywords": [],
+  "author": "Guilherme de Carvalho Boaventura",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mysql2": "^2.2.5",
+    "pm2": "^4.5.6"
+  }
+}
