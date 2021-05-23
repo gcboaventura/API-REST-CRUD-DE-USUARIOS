@@ -1,10 +1,13 @@
+const insertAdmin = require('./createAdmin')
+
 module.exports = (connection) => {
 
     (async () => {
         await User()
         await Log()
+        await insertAdmin()
     })()
-    
+
     function User() {
         let nameTable = "USER"
         const sql = `CREATE TABLE IF NOT EXISTS ${nameTable} (
@@ -21,7 +24,7 @@ module.exports = (connection) => {
         create(sql, nameTable)
     }
 
-    function Log(){
+    function Log() {
         let nameTable = "LOG"
         const sql = `CREATE TABLE IF NOT EXISTS ${nameTable} (
             ID INT NOT NULL AUTO_INCREMENT,
@@ -30,7 +33,7 @@ module.exports = (connection) => {
             DATA_ALTERACAO DATETIME NOT NULL,
             PRIMARY KEY (ID))`
 
-            create(sql, nameTable)
+        create(sql, nameTable)
     }
 
     function create(sql, nameTable) {

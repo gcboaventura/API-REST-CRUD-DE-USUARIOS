@@ -19,6 +19,7 @@ function verifyEmail(request, response) {
                     log(result[0].EMAIL, action)
                     response.status(200).json({ token })
                 } else {
+                    console.log(decrypt(request.senha, result[0].SENHA, response))
                     response.status(401).json(authentication)
                 }
             }
