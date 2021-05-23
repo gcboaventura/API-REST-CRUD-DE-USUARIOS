@@ -209,6 +209,17 @@ Para excluir um usuário, será necessário indentificá-lo pelo ID. Faça da se
 ````
 ![gif](assets/gifs/deletandoUsuario.gif)
 
+## Logs
+
+Todas as alterações no sistema são monitoras por logs. Para visualizar todos os registros, acesse sua base no MySQL e execute o seguinte comando:
+
+````bash
+
+SELECT * FROM LOG;
+# Será listado todos os registros até o momento
+````
+![log](assets/img/log.png)
+
 ## Tecnologias
 
 * [NodeJS](https://nodejs.org/en/)
