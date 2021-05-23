@@ -34,20 +34,20 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 A instalação da API é bem simples, será necessário realizar as confiruações abaixo:
 
-* #### Clone o respositório
+### Clone o respositório
 
 ```` bash
 git clone https://github.com/gcboaventura/api-rest-crud-de-usuarios.git
 ````
 
-* #### Crie uma base de dados
+### Crie uma base de dados
 
 Como já informado, precisamos que o MySQL esteja instalado em sua máquina. Será necessário criar uma base de dados com nome de sua preferência. 
 
 ```` bash
 CREATE DATABASE CRUD;
 ````
-* #### Instale as dependências
+### Instale as dependências
 
 Dependências são necessárias para que o projeto funcione perfeitamente. Abra o terminal e execute o comando a seguir:
 
@@ -56,7 +56,9 @@ npm install
 ````
 
 
-* #### Variáveis de ambiente
+### Variáveis de ambiente
+
+O projeto possui a dependência Dotenv, a mesma é necessária para confifurar as variáveis de ambiente. Na raiz do projeto, crie um arquivo ".env" e atribua as variáveis conforme abaixo:
 
 ```` bash
 # Atribua valores para as variáveis
@@ -97,9 +99,10 @@ A aplicação está configurada para aceitar requisições em formato JSON.
 As rotas são protegidas com token, desta forma, o usuário que não esteja logado no sistema não irá conseguir visualizar ou realizar alterações no sistema.
 
 Lembre-se de anexar ao header das requisições o Authorization: token fornecido e a classificação Content-type: application/json.
+
 ![gif](assets/gifs/contentTypeToken.gif)
 
-#### Rodando o projeto
+### Rodando o projeto
 
 Após todas as configurações realizadas, execute o comando a seguir para rodar o projeto:
 
@@ -110,7 +113,7 @@ npm run dev
 ````
 ![gif](assets/gifs/rodandoNodemon.gif)
 
-#### Login
+### Login
 
 Com a aplicação em funcionamento, efetue o login com os dados abaixo:
 
@@ -126,7 +129,7 @@ Com a aplicação em funcionamento, efetue o login com os dados abaixo:
 ````
 ![gif](assets/gifs/login.gif)
 
-#### Cadastrar Usuário
+### Cadastrar Usuário
 
 Para cadastrar um usuário, faça o seguinte:
 
@@ -147,7 +150,7 @@ Para cadastrar um usuário, faça o seguinte:
 ````
 ![gif](assets/gifs/criandoUsuário.gif)
 
-#### Visualizar todos os usuários
+### Visualizar todos os usuários
 
 Para visualizar todos os usuários, faça o seguinte:
 
@@ -158,7 +161,7 @@ Para visualizar todos os usuários, faça o seguinte:
 ````
 ![gif](assets/gifs/listandoTodosOsUsuários.gif)
 
-#### Filtrar usuário por ID
+### Filtrar usuário por ID
 
 Para visualizar um usuário em específico, será necessário passar o ID como parâmetro. Faça da seguinte forma:
 
@@ -169,7 +172,7 @@ Para visualizar um usuário em específico, será necessário passar o ID como p
 ````
 ![gif](assets/gifs/listandoPorID.gif)
 
-#### Editar informações do usuário
+### Editar informações do usuário
 
 Para editar as informações do usuário, será necessário indentificá-lo pelo ID. Faça da seguinte forma:
 
@@ -192,7 +195,7 @@ Para editar as informações do usuário, será necessário indentificá-lo pelo
 ````
 ![gif](assets/gifs/alterandoInformacoes.gif)
 
-#### Excluindo usuário
+### Excluindo usuário
 
 Para excluir um usuário, será necessário indentificá-lo pelo ID. Faça da seguinte forma:
 
