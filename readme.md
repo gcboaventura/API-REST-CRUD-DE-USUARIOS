@@ -176,6 +176,15 @@ Para editar as informações do usuário, será necessário indentificá-lo pelo
 ```` bash
 # Rota http://localhost:4000/User/:id  - Método: PATCH
 
+{
+	"nome":"Joao",
+	"email":"Joao@Joao.com.br",
+	"senha":"senhaDoJoao",
+	"telefone":"011999999999",
+	"setor":"Consultoria",
+	"cargo":"Consultor"
+}
+
 # A resposta será uma mensagem de sucesso.
 {
   "message": "Success."
@@ -217,6 +226,7 @@ Para excluir um usuário, será necessário indentificá-lo pelo ID. Faça da se
 ## Autor
 
 ![autor](assets/img/autor.png)
+
 Guilherme de Carvalho Boaventura
 
 Me siga nas redes sociais !
