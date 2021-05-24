@@ -1,6 +1,6 @@
 ![banner](assets/img/bannerGitHub.png)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/gcboaventura/api-rest-crud-de-usuarios)
+![GitHub repo size](https://img.shields.io/github/repo-size/gcboaventura/api-rest-crud-de-usuarios) ![GitHub language count](https://img.shields.io/github/languages/count/gcboaventura/api-rest-crud-de-usuarios) ![GitHub top language](https://img.shields.io/github/languages/top/gcboaventura/api-rest-crud-de-usuarios) ![GitHub last commit](https://img.shields.io/github/last-commit/gcboaventura/api-rest-crud-de-usuarios)
 
 ## Tabela de conteúdos
 
